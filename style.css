@@ -141,7 +141,10 @@ h1 {
     color: aliceblue;
     text-align: center;
 
+
 }
+
+
 
 hr {
     border: 1 solid #D1D1D1;
@@ -158,6 +161,15 @@ hr {
 
 .policy1 {
     color: #D1D1D1;
+
+}
+
+.trans {
+    background-image: linear-gradient(rgb(241, 9, 9), rgb(238, 139, 121));
+    padding: 10px 30px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
 
 }
 
