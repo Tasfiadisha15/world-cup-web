@@ -4,6 +4,7 @@ body {
 
 }
 
+/* top banner */
 h1 {
     font-size: 50px;
 
@@ -30,13 +31,28 @@ h1 {
 
 
 .live {
-    text-decoration: none;
-    background-image: linear-gradient(rgb(224, 28, 28), rgb(250, 51, 16));
-    padding: 10px 40px;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: large;
+
+
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #fc2f2f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.live:hover {
+    background-color: #be0e0e
+}
+
+.live:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .top-banner {
@@ -54,6 +70,7 @@ h1 {
     height: 80%;
 }
 
+/* three button */
 .button1 {
     text-decoration: none;
     background-color: white;
@@ -100,9 +117,19 @@ h1 {
     align-items: center;
     justify-content: center;
     row-gap: 50px;
+    margin-top: 43px;
 
 }
 
+.main {
+    display: flex;
+
+}
+
+
+
+
+/* all player cards */
 .container {
     background-color: white;
     width: 870px;
@@ -130,6 +157,7 @@ h1 {
     justify-content: space-between;
 }
 
+/* footer part */
 .align {
 
     background-color: black;
@@ -182,16 +210,19 @@ hr {
         width: 100%;
     }
 
+    /* 
     .top-banner,
     .tittle,
     .player {
         align-items: center;
-    }
+        vertical-align: middle;
+    } */
 
-    .button,
-    .transfer,
-    .box-info {
-        grid-template-columns: repeat(1, 1fr);
+    .title,
+    .live,
+    .player,
+    .top-banner {
+        grid-template-rows: repeat(1, 1fr);
     }
 
     .button,
@@ -200,8 +231,9 @@ hr {
     }
 
     .footer,
-    .policy {
-        display: table-cell;
+    .policy,
+    .align {
+
         vertical-align: middle;
     }
 
@@ -220,16 +252,13 @@ hr {
     .container {
         width: 100%;
     }
-
-
-
 }
 
 
 
 /*.................................................... web page two................................................... */
 
-
+/*......... top banner.......... */
 h1 {
     font-size: 50px;
 
@@ -255,7 +284,7 @@ h1 {
 }
 
 
-.live {
+/* .live {
     text-decoration: none;
     background-image: linear-gradient(rgb(224, 28, 28), rgb(250, 51, 16));
     padding: 10px 40px;
@@ -263,7 +292,7 @@ h1 {
     font-weight: 700;
     border-radius: 5px;
     font-size: large;
-}
+} */
 
 .top-banner {
     width: 1000px;
@@ -280,16 +309,22 @@ h1 {
     height: 80%;
 }
 
+/* ................three button.......... */
+
 .button1 {
     text-decoration: none;
-    background-color: white;
+
     padding: 10px 40px;
-    color: black;
+
     font-weight: 700;
     border-radius: 5px;
     font-size: large;
     margin-bottom: 200px;
+}
 
+#butt1 {
+    background-image: linear-gradient(rgb(224, 28, 28), rgb(250, 51, 16));
+    color: white;
 }
 
 .button2 {
@@ -302,14 +337,19 @@ h1 {
     font-size: large;
 }
 
-.button3 {
+.buttton3 {
     text-decoration: none;
-    background-image: linear-gradient(rgb(224, 28, 28), rgb(250, 51, 16));
+
     padding: 10px 60px;
-    color: white;
+
     font-weight: 700;
     border-radius: 5px;
     font-size: large;
+}
+
+#butt3 {
+    background-color: white;
+    color: black;
 }
 
 .button {
@@ -328,6 +368,9 @@ h1 {
     row-gap: 50px;
 
 }
+
+
+/* flag box */
 
 .flag {
     /* display: grid;
@@ -368,6 +411,7 @@ h1 {
     display: flex;
 } */
 
+/*......................... footer.................. */
 .align {
 
     background-color: black;
@@ -414,6 +458,7 @@ hr {
     border: 0.1px solid gray;
 }
 
+/* ...................apps icon ..................*/
 .app {
     display: flex;
     align-items: center;
